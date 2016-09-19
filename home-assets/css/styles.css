@@ -1,0 +1,323 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+html {
+  display: table;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+body {
+  background-color: #23262A;  
+}
+/* help hide element */
+.no-display{
+  display: none;
+}
+.remind{
+  display: none;
+}
+.col-lg-4 {
+  height: 100%;
+  display: table;
+  position: absolute;
+  z-index: 10002;
+
+}
+.col-lg-8{
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  display: table;
+}
+.col-lg-4 ul {
+  z-index: 1002;
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.col-lg-4 li {
+  width: 200px;
+}
+.menuLeft{
+ list-style: none;
+ position: relative;
+ /*margin: 10px 20px;*/
+ margin-bottom: 16px;
+ width: 100%;
+ height: 30px;
+ line-height: 30px;
+}
+.menuLeft a{
+  width:200px;
+  color:white;
+  display: inline-block;
+  margin-left: -12px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.menuLeft a:hover{
+  text-decoration: none;
+  color:white;
+}
+.menuLeft:hover .squarebrackets:before{
+  border-color:white; 
+}
+.menuLeft:hover .squarebrackets:after{
+  border-color: white; 
+}
+.menuLeft:target{
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menuLeft.active a{
+  color:white;
+  text-decoration: none;
+}
+.menuLeft .squarebrackets:before {
+ content: " ";
+ border-left:1px solid #23262A;
+ border-top:1px solid #23262A;
+ border-bottom:1px solid #23262A;
+ margin-right:15px;
+ padding:0px 2px 0px 2px;
+}
+.menuLeft .squarebrackets:after{
+  content:" ";
+  padding:0px 2px 0px 2px;
+  border-right:1px solid #23262A;
+  border-top:1px solid #23262A;
+  border-bottom:1px solid #23262A;
+  margin-left:15px;
+}
+.menuLeft.active .squarebrackets:before {
+ content: " ";
+ border-left:1px solid #23262A;
+ border-top:1px solid #23262A;
+ border-bottom:1px solid #23262A;
+ margin-right:15px;
+ padding:0px 2px 0px 2px;
+ border-color: white;
+}
+.menuLeft.active .squarebrackets:after{
+  content:" ";
+  padding:0px 2px 0px 2px;
+  border-right:1px solid #23262A;
+  border-top:1px solid #23262A;
+  border-bottom:1px solid #23262A;
+  margin-left:15px;
+  border-color: white; 
+}
+
+/* 不为设计 为未来*/
+@media screen and (max-width: 1920px){
+  #first{
+    right: 5%;
+  }
+}
+#first{
+  height: 100%;    
+  display: table;
+  position: absolute;
+}
+#slogan{
+ right: 100px;
+ margin: auto;
+ position: absolute;
+}
+@media screen and (min-height: 1080px){
+  #slogan{
+    top: 400px;
+  }
+}
+@media screen and (max-height: 1079px){
+  #slogan{
+    top: 200px;
+  }
+}
+#myContainer {
+  z-index: 100;
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+/* 为约束为自由 */
+#second{
+  display: table;
+  position: absolute;
+  height: 100%;
+}
+
+.test{
+  display: table-cell;
+  vertical-align: middle;
+}
+.svgImg {
+  max-width: 100vw;
+  max-height: 100vw;
+  -webkit-animation: rotate 20s infinite linear;
+  animation: rotate 20s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+  0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+/* 为破为立 */
+#third{
+  display: table;
+  position: absolute;
+  height: 100%;
+}
+.img {
+  margin-left: 90px;
+  -webkit-animation:spin 15s linear infinite;
+  -moz-animation:spin 15s linear infinite;
+  animation:spin 15s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* 为舍为得 */
+#fourth{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+#myCanvas{
+  bottom: 0px;
+}
+
+/* 为我们 */
+#fifth{
+  height: 100%; 
+  width: 100%;   
+  position: relative;
+}
+
+#group{
+  max-height: 100%;  
+  /*max-width: 100%; */
+  width: auto;
+  height: auto;
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: -200px;  
+  right: 0;  
+  margin: auto;
+}
+
+/*try responsive*/
+@media screen and (min-device-width: 1500px){
+  #group{
+  max-width: 100%; 
+}
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1320px) { 
+  #spec{
+    margin-left:500px !important;
+  }
+  #resource{
+    margin-left: 500px !important;
+  }
+  #slogan{
+   right:300px !important;
+ }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+  #slogan{
+   right:450px !important;
+ }
+ .test{
+  left: 250px;
+  position: fixed;
+}
+#spec{
+  margin-left: 550px !important;
+}
+#group{
+  left: 200px;
+  position: fixed;
+ 
+}
+.test2{
+  display: block !important;
+  position: fixed !important;
+  left: 400px !important;
+  top: 500px !important;
+  z-index: 100 !important;
+}
+#resource{
+  margin-left: 400px !important;
+}
+#myCanvas{ 
+  left: 300px;
+  position: fixed;
+}
+#black{
+  left: 320px;
+  position: fixed;
+}
+}
+@media screen and (min-device-width: 451px) and (max-device-width: 768px){
+  #slogan{
+   right:850px !important;
+ }
+ .test{
+  left: 250px;
+  position: fixed;
+}
+#spec{
+  margin-left: 300px !important;
+}
+#group{
+  left: 200px;
+  position: fixed;
+  max-width: 100%; 
+}
+.test2{
+  display: block !important;
+  position: fixed !important;
+  left: 400px !important;
+  top: 500px !important;
+  z-index: 100 !important;
+}
+#resource{
+  margin-left: 100px !important;
+  margin-top:-410px !important;
+}
+#myCanvas{ 
+  left: 300px;
+  position: fixed;
+}
+#black{
+  left: 320px;
+  position: fixed;
+}
+}
+@media screen and (max-device-width: 450px){
+  .remind{
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 50px;
+  color: white;
+}
+h4{
+  font-weight: 100 !important;
+}
+}
